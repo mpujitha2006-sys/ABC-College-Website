@@ -45,3 +45,25 @@ if (searchInput) {
     },
   );
 }
+
+window.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    const params = new URLSearchParams(
+      window.location.search,
+    );
+
+    if (params.get("sent") === "1") {
+      alert(
+        "Message Sent Successfully!",
+      );
+
+      // remove query so refresh won't show alert again
+      window.history.replaceState(
+        {},
+        document.title,
+        "/contact",
+      );
+    }
+  },
+);

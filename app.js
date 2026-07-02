@@ -115,7 +115,7 @@ app.post("/contact", (req, res) => {
           "Error saving message.",
         );
       }
-      res.redirect("/contact");
+      res.redirect("/contact?sent=1");
     },
   );
 });
