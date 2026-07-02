@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/css/styles.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-primary"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="/"
+          >
+            <img
+              src="/images/logo.png"
+              alt="photo"
+              width="40"
+              height="40"
+              class="me-2"
+            />
+            <span>ABC College</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span
+              class="navbar-toggler-icon"
+            ></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="menu"
+          >
+            <ul
+              class="navbar-nav ms-auto"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/about"
+                >
+                  About
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/departments"
+                >
+                  Departments
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/courses"
+                >
+                  Courses
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/gallery"
+                >
+                  Gallery
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="content">
+        <section class="container py-5">
+          <h1 class="text-center mb-5">
+            Contact Us
+          </h1>
+
+          <div class="row">
+            <div class="col-md-6">
+              <form
+                id="contactForm"
+                action="/contact"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control mb-3"
+                  placeholder="Your Name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control mb-3"
+                  placeholder="Email"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control mb-3"
+                  placeholder="Subject"
+                  required
+                />
+
+                <textarea
+                  name="message"
+                  class="form-control mb-3"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary mb-4"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div class="col-md-5">
+              <div class="card p-4">
+                <h4>Address</h4>
+                <p>
+                  ABC College, Chennai,
+                  Tamil Nadu
+                </p>
+
+                <h4>Email</h4>
+                <p>
+                  info@abccollege.com
+                </p>
+
+                <h4>Phone</h4>
+                <p>+91 9876543210</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="bg-dark text-white text-center p-3 mt-auto"
+      >
+        <p>
+          © 2026 ABC College. All Rights
+          Reserved.
+        </p>
+
+        <div class="mt-2">
+          <a
+            href="https://github.com/mpujitha2006-sys"
+            target="_blank"
+            class="text-white me-3"
+          >
+            <i
+              class="fab fa-github fa-2x"
+            ></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/pujitha-mogallapalli-15504532b"
+            target="_blank"
+            class="text-white"
+          >
+            <i
+              class="fab fa-linkedin fa-2x"
+            ></i>
+          </a>
+          <a
+            href="/admin-login"
+            class="text-white text-decoration-none ms-3"
+            >Admin Login</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
