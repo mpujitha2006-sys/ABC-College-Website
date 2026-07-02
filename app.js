@@ -24,10 +24,13 @@ app.use(
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
+  port: Number(process.env.DB_PORT),
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 db.connect((err) => {
@@ -40,13 +43,6 @@ db.connect((err) => {
     console.log("Connected to MySQL");
   }
 });
-
-app.use(express.static("public"));
-app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  }),
-);
 
 app.set("view engine", "ejs");
 
@@ -192,10 +188,10 @@ app.get("/logout", (req, res) => {
   res.redirect("/admin-login");
 });
 
-app.listen(3000, () => {
-  console.log("Server running");
-});
-
 app.use((req, res) => {
   res.status(404).render("404");
+});
+
+app.listen(3000, () => {
+  console.log("Server running");
 });
