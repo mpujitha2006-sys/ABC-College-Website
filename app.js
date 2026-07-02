@@ -78,6 +78,7 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/contact", (req, res) => {
+  console.log("BODY:", req.body);
   const {
     name,
     email,
