@@ -2,7 +2,19 @@
 
 ## Project Overview
 
-ABC College Website is a responsive full-stack web application developed using Node.js, Express.js, MySQL, HTML, CSS, Bootstrap, and JavaScript. The website provides information about the college, including departments, courses, gallery, and contact details. It also includes an admin panel to manage contact messages submitted by users.
+A full-stack demo college website developed using Node.js, Express.js, MySQL, HTML, CSS, Bootstrap, and JavaScript. ABC College is a fictional institution created for educational and portfolio purposes. It also includes an admin panel to manage contact messages submitted by users.
+
+---
+
+## Live Demo
+
+https://abc-college-website-production.up.railway.app
+
+---
+
+## GitHub Repository
+
+https://github.com/mpujitha2006-sys/ABC-College-Website
 
 ---
 
@@ -58,7 +70,6 @@ ABC College Website is a responsive full-stack web application developed using N
 - Built using the MVC architecture with Express.js and EJS.
 - Clean and user-friendly interface.
 
-
 ## Project Structure
 
 ```
@@ -92,7 +103,7 @@ ABC-College-Website
 1. Clone the repository
 
 ```
-git clone YOUR_GITHUB_REPOSITORY_LINK
+git clone https://github.com/mpujitha2006-sys/ABC-College-Website.git
 ```
 
 2. Open the project
