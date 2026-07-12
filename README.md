@@ -8,7 +8,7 @@ A full-stack demo college website developed using Node.js, Express.js, MySQL, HT
 
 ## Live Demo
 
-https://abc-college-website-production.up.railway.app
+https://abc-college-website.onrender.com
 
 ---
 
